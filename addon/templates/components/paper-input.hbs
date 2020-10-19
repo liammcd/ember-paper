@@ -1,5 +1,16 @@
 {{#if label}}
-  <label for={{inputElementId}} class={{if required "md-required"}}>{{label}}</label>
+  <label for={{inputElementId}} class={{if required "md-required"}} style="margin-left:5px;">
+    <span style="
+      display:inline-block;
+      background: -webkit-linear-gradient(top, transparent, white 42%);
+      background: -o-linear-gradient(bottom, transparent, white 42%);
+      background: -moz-linear-gradient(bottom, transparent, white 42%);
+      background: linear-gradient(to bottom, transparent, white 42%);
+      padding-left: 1px;
+      padding-right: 1px;">
+      {{label}}
+    </span>
+  </label>
 {{/if}}
 
 {{#if icon}}
