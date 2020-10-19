@@ -39,6 +39,15 @@
   animation: md-spin-reverse 1.5s infinite linear;
 }
 
+.md-select {
+  border: 1px solid grey;
+  padding-top: 5px;
+  margin-top: -5px !important;
+  padding-left: 2px;
+  border-radius: 5px 5px 5px 5px;
+  background: white;
+}
+
 // Spin
 @keyframes md-spin {
   0% {
@@ -68,4 +77,3 @@
 
 // some overrides that are needed for ember-paper (avoid if possible)
 @import './overrides/paper-autocomplete';
-
