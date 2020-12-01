@@ -120,6 +120,11 @@ export default Component.extend({
     },
 
     chipClick(index, event) {
+      // Expose callback action
+      if (this.onChipClick) {
+        this.onChipClick(index);
+      }
+
       // Prevent click from bubbling up to the chips element.
       event.stopPropagation();
 
